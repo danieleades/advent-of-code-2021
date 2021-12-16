@@ -5,9 +5,6 @@ pub struct Puzzle;
 impl Solution for Puzzle {
     type Output = i32;
 
-    const DAY: u16 = 2;
-    const INPUT: &'static str = include_str!("inputs/day2");
-
     fn part_a(input: &str) -> Self::Output {
         let position = parse(input).fold((0, 0), |mut position, (command, x)| {
             match command {

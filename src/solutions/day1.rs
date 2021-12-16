@@ -7,9 +7,6 @@ pub struct Puzzle;
 impl Solution for Puzzle {
     type Output = usize;
 
-    const DAY: u16 = 1;
-    const INPUT: &'static str = include_str!("inputs/day1");
-
     fn part_a(input: &str) -> Self::Output {
         let elements = parse(input);
 
@@ -39,7 +36,8 @@ fn count_increases(input: impl Iterator<Item = i32>) -> usize {
 
 #[cfg(test)]
 mod tests {
-    use crate::{day1::Puzzle, Solution};
+    use super::Puzzle;
+    use crate::Solution;
 
     const INPUT: &str = r#"199
 200
