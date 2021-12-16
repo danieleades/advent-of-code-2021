@@ -20,7 +20,7 @@ pub struct App {
     root: String,
 
     /// A comma-separated list of solutions to run
-    #[clap(short, default_value = "1,2,3,6", value_delimiter = ',')]
+    #[clap(short, default_value = "1,2,3,6,7", value_delimiter = ',')]
     days: Vec<u16>,
 }
 
@@ -47,6 +47,7 @@ impl App {
                 2 => run!(2),
                 3 => run!(3),
                 6 => run!(6),
+                7 => run!(7),
                 _ => unimplemented!(),
             }
         }
