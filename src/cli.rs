@@ -45,6 +45,7 @@ impl App {
             match day {
                 1 => run!(1),
                 2 => run!(2),
+                3 => run!(3),
                 6 => run!(6),
                 _ => unimplemented!(),
             }
