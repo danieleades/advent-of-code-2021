@@ -10,7 +10,7 @@ clap = { version = "3.0.4", features = ["derive"] }
 itertools = "0.10.3"
 ndarray = "0.15.4"
 paste = "1.0.6"
-test-case = "1.2.1"
+test-case = "1.2.2"
 
 
 [dev-dependencies]
